@@ -17,6 +17,6 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"Object1","order":1,"path":"objects/Object1/Object1.yy",},
+    {"name":"Obj_player","order":1,"path":"objects/Obj_player/Obj_player.yy",},
   ],
 }
