@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-velocidade = 5;
+show_message("Alarme")
 
