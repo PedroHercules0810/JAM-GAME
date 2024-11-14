@@ -16,5 +16,9 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_bala","order":1,"path":"objects/obj_bala/obj_bala.yy",},
+    {"name":"spr_bala","order":2,"path":"sprites/spr_bala/spr_bala.yy",},
+    {"name":"spr_coracao","order":1,"path":"sprites/spr_coracao/spr_coracao.yy",},
+  ],
 }

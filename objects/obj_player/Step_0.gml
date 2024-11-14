@@ -1,15 +1,30 @@
-/// @description Insert description here
-// You can write your code in this editor
+//variaveis
+var _up = max(keyboard_check(ord("W")), keyboard_check(vk_up))
+var _down = max(keyboard_check(ord("S")), keyboard_check(vk_down))
+var _left = max(keyboard_check(ord("A")), keyboard_check(vk_left))
+var _right = max(keyboard_check(ord("D")), keyboard_check(vk_right))
 
-var _up = keyboard_check(ord("W"))
-var _down = keyboard_check(ord("S"))
-var _left = keyboard_check(ord("A"))
-var _right = keyboard_check(ord("D"))
+var _mouse_click = mouse_check_button(mb_left)
 
-show_debug_message(x,y)
-
+//movimentação
 x = clamp(x,0+sprite_width/2,room_width-sprite_width/2)
-y = clamp(y, 0+sprite_width/2, room_height-sprite_width/2)
+y = clamp(y, 0+sprite_height/2, room_height-sprite_height/2)
 
-y += (_down - _up) * velocidade
-x += (_right - _left) * velocidade
+y += (_down - _up) * velocidade;
+x += (_right - _left) * velocidade;
+
+//olhando para o mouse
+direction = point_direction(x,y,mouse_x, mouse_y)
+show_debug_message(direction)
+image_angle = direction;
+
+//atirando
+cooldown ++;
+if(_mouse_click && cooldown >= espera){
+	instance_create_layer(x,y,layer, obj_bala)
+	cooldown = 0;
+}
+
+if(keyboard_check_pressed(vk_space) && espera >= 20){
+	espera -= 10;
+}
