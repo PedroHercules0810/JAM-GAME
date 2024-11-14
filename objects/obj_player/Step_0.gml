@@ -24,7 +24,3 @@ if(_mouse_click && cooldown >= espera){
 	instance_create_layer(x,y,layer, obj_bala)
 	cooldown = 0;
 }
-
-if(keyboard_check_pressed(vk_space) && espera >= 20){
-	espera -= 10;
-}
