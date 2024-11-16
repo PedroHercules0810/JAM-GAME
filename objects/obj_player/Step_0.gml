@@ -21,6 +21,14 @@ image_angle = direction;
 //atirando
 cooldown ++;
 if(_mouse_click && cooldown >= espera){
-	instance_create_layer(x,y,layer, obj_bala)
+	var _xx = x + lengthdir_x(64, image_angle);
+	var _yy = y + lengthdir_y(64, image_angle);
+	instance_create_layer(_xx, _yy, layer , obj_bala);
 	cooldown = 0;
-}
+	}
+
+var _xx = x + lengthdir_x(64, image_angle);
+var _yy = y + lengthdir_y(64, image_angle);
+
+obj_arma.x = _xx;
+obj_arma.y = _yy;

@@ -5,3 +5,5 @@ espera = 60
 velocidade = 5;
 vida = 2;
 cooldown = 0;
+
+instance_create_layer(x,y, layer, obj_arma)

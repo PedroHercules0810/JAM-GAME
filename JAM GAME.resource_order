@@ -17,8 +17,12 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_arma","order":2,"path":"objects/obj_arma/obj_arma.yy",},
     {"name":"obj_bala","order":1,"path":"objects/obj_bala/obj_bala.yy",},
+    {"name":"obj_cururu","order":3,"path":"objects/obj_cururu/obj_cururu.yy",},
+    {"name":"spr_arma","order":3,"path":"sprites/spr_arma/spr_arma.yy",},
     {"name":"spr_bala","order":2,"path":"sprites/spr_bala/spr_bala.yy",},
     {"name":"spr_coracao","order":1,"path":"sprites/spr_coracao/spr_coracao.yy",},
+    {"name":"spr_cururu","order":4,"path":"sprites/spr_cururu/spr_cururu.yy",},
   ],
 }
