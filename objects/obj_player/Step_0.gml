@@ -32,3 +32,13 @@ var _yy = y + lengthdir_y(64, image_angle);
 
 obj_arma.x = _xx;
 obj_arma.y = _yy;
+
+if(place_meeting(x,y, obj_cururu) && invencivel == false){
+	vida -= 1;
+	invencivel = true;
+	alarm[0] = 120;
+}
+
+if(vida <= 0) {
+	game_restart();
+}
