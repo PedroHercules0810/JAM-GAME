@@ -21,6 +21,7 @@
     {"name":"obj_bala","order":1,"path":"objects/obj_bala/obj_bala.yy",},
     {"name":"obj_cururu","order":3,"path":"objects/obj_cururu/obj_cururu.yy",},
     {"name":"obj_esplosao","order":4,"path":"objects/obj_esplosao/obj_esplosao.yy",},
+    {"name":"obj_parede","order":6,"path":"objects/obj_parede/obj_parede.yy",},
     {"name":"obj_spawner","order":5,"path":"objects/obj_spawner/obj_spawner.yy",},
     {"name":"spr_arma","order":3,"path":"sprites/spr_arma/spr_arma.yy",},
     {"name":"spr_background","order":6,"path":"sprites/spr_background/spr_background.yy",},
@@ -28,5 +29,6 @@
     {"name":"spr_coracao","order":1,"path":"sprites/spr_coracao/spr_coracao.yy",},
     {"name":"spr_cururu","order":4,"path":"sprites/spr_cururu/spr_cururu.yy",},
     {"name":"spr_explosion","order":5,"path":"sprites/spr_explosion/spr_explosion.yy",},
+    {"name":"spr_parede","order":7,"path":"sprites/spr_parede/spr_parede.yy",},
   ],
 }
