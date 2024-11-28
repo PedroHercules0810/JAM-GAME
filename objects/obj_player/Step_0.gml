@@ -3,18 +3,22 @@ var _up = max(keyboard_check(ord("W")), keyboard_check(vk_up))
 var _down = max(keyboard_check(ord("S")), keyboard_check(vk_down))
 var _left = max(keyboard_check(ord("A")), keyboard_check(vk_left))
 var _right = max(keyboard_check(ord("D")), keyboard_check(vk_right))
-
 var _mouse_click = mouse_check_button(mb_left)
+
 
 //movimentação
 vel_h = (_right - _left) * velocidade
 vel_v = (_down - _up) * velocidade
 
+//limitando o movimento
+x = clamp(x, 0 + sprite_width/2, room_width-sprite_width/2)
+y = clamp(y, 0 + sprite_height/2, room_height-sprite_height/2)
+//colisao
 if place_meeting(x+vel_h,y,obj_parede) {
     while !place_meeting(x+sign(vel_h),y,obj_parede) {
         x += sign(vel_h);
-    }
-    vel_h = 0;
+	}
+	vel_h = 0;
 }
 x += vel_h;
 
@@ -37,7 +41,7 @@ if(_mouse_click && cooldown >= espera){
 	var _yy = y + lengthdir_y(64, image_angle);
 	instance_create_layer(_xx, _yy, layer , obj_bala);
 	cooldown = 0;
-	}
+}
 
 var _xx = x + lengthdir_x(64, image_angle);
 var _yy = y + lengthdir_y(64, image_angle);

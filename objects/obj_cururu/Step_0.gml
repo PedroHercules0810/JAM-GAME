@@ -2,9 +2,7 @@
 // You can write your code in this editor
 
 var _direcao_player = point_direction(x,y,Obj_player.x, Obj_player.y);
-var _distancia_player = point_distance(x,y,Obj_player.x, Obj_player.y)
-
-show_debug_message(_distancia_player)
+var _distancia_player = point_distance(x,y,Obj_player.x, Obj_player.y);
 
 speed = 0;
 
