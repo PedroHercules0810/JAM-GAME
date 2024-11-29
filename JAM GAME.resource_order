@@ -26,6 +26,7 @@
     {"name":"spr_background","order":6,"path":"sprites/spr_background/spr_background.yy",},
     {"name":"spr_bala","order":2,"path":"sprites/spr_bala/spr_bala.yy",},
     {"name":"spr_besouro","order":7,"path":"sprites/spr_besouro/spr_besouro.yy",},
+    {"name":"spr_cactu","order":8,"path":"sprites/spr_cactu/spr_cactu.yy",},
     {"name":"spr_coracao","order":1,"path":"sprites/spr_coracao/spr_coracao.yy",},
     {"name":"spr_cururu","order":4,"path":"sprites/spr_cururu/spr_cururu.yy",},
     {"name":"spr_explosion","order":5,"path":"sprites/spr_explosion/spr_explosion.yy",},

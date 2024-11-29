@@ -45,6 +45,7 @@
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
     {"id":{"name":"spr_bala","path":"sprites/spr_bala/spr_bala.yy",},},
     {"id":{"name":"spr_besouro","path":"sprites/spr_besouro/spr_besouro.yy",},},
+    {"id":{"name":"spr_cactu","path":"sprites/spr_cactu/spr_cactu.yy",},},
     {"id":{"name":"spr_coracao","path":"sprites/spr_coracao/spr_coracao.yy",},},
     {"id":{"name":"spr_cururu","path":"sprites/spr_cururu/spr_cururu.yy",},},
     {"id":{"name":"spr_explosion","path":"sprites/spr_explosion/spr_explosion.yy",},},
