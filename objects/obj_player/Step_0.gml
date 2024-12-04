@@ -31,30 +31,44 @@ if place_meeting(x,y+vel_v,obj_parede) {
 y += vel_v;
 
 //olhando para o mouse
-direction = point_direction(x,y,mouse_x, mouse_y)
-image_angle = direction;
+var _mouse_direcao = point_direction(x,y,mouse_x, mouse_y)
+direction = _mouse_direcao
 
 //atirando
 cooldown ++;
 if(_mouse_click && cooldown >= espera){
-	var _xx = x + lengthdir_x(64, image_angle);
-	var _yy = y + lengthdir_y(64, image_angle);
+	var _xx = x + lengthdir_x(64, direction);
+	var _yy = y + lengthdir_y(64, direction);
 	instance_create_layer(_xx, _yy, layer , obj_bala);
 	cooldown = 0;
 }
 
-var _xx = x + lengthdir_x(64, image_angle);
-var _yy = y + lengthdir_y(64, image_angle);
+//fazendo a arma girar ao redor do player
+var _xx = x + lengthdir_x(80, direction);
+var _yy = y + lengthdir_y(80, direction);
 
 obj_arma.x = _xx;
 obj_arma.y = _yy;
 
+//fazendo o player flipar qnd a arma estiver atras
+show_debug_message(point_direction(x,y,mouse_x, mouse_y))
+if(_mouse_direcao >= 90 && _mouse_direcao <= 270){
+	image_xscale = -1
+	obj_arma.image_yscale = -2
+} else {
+	image_xscale = 1
+	obj_arma.image_yscale = 2
+}
+
+
+//colidindo com o cururu
 if(place_meeting(x,y, obj_cururu) && invencivel == false){
 	vida -= 1;
 	invencivel = true;
 	alarm[0] = 120;
 }
 
+//morrendo
 if(vida <= 0) {
 	game_restart();
 }
