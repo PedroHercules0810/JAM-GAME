@@ -51,7 +51,7 @@ obj_arma.x = _xx;
 obj_arma.y = _yy;
 
 //fazendo o player flipar qnd a arma estiver atras
-show_debug_message(point_direction(x,y,mouse_x, mouse_y))
+
 if(_mouse_direcao >= 90 && _mouse_direcao <= 270){
 	image_xscale = -1
 	obj_arma.image_yscale = -2
