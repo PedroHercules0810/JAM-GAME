@@ -36,6 +36,7 @@
   "resources":[
     {"id":{"name":"obj_arma","path":"objects/obj_arma/obj_arma.yy",},},
     {"id":{"name":"obj_bala","path":"objects/obj_bala/obj_bala.yy",},},
+    {"id":{"name":"obj_besouro","path":"objects/obj_besouro/obj_besouro.yy",},},
     {"id":{"name":"obj_controle","path":"objects/obj_controle/obj_controle.yy",},},
     {"id":{"name":"obj_cururu","path":"objects/obj_cururu/obj_cururu.yy",},},
     {"id":{"name":"obj_esplosao","path":"objects/obj_esplosao/obj_esplosao.yy",},},

@@ -19,6 +19,7 @@
   "ResourceOrderSettings":[
     {"name":"obj_arma","order":2,"path":"objects/obj_arma/obj_arma.yy",},
     {"name":"obj_bala","order":1,"path":"objects/obj_bala/obj_bala.yy",},
+    {"name":"obj_besouro","order":8,"path":"objects/obj_besouro/obj_besouro.yy",},
     {"name":"obj_controle","order":7,"path":"objects/obj_controle/obj_controle.yy",},
     {"name":"obj_cururu","order":3,"path":"objects/obj_cururu/obj_cururu.yy",},
     {"name":"obj_esplosao","order":4,"path":"objects/obj_esplosao/obj_esplosao.yy",},

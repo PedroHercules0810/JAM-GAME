@@ -13,20 +13,14 @@ if(_distancia_player <= 600){
 	direction = _direcao_player
 	speed = velocidade_cacada
 	estado = "cacada"
+
 } else{
 	estado = "alerta"
 	speed = velocidade
+
 }
 
 image_angle = direction;
-
-if(direction >= 90 && direction <= 270){
-	image_xscale = -2
-
-} else {
-	image_xscale = 2
-
-}
 
 if(place_meeting(x,y, obj_bala)){
 	vida -= obj_bala.dano	
