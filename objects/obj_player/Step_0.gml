@@ -62,7 +62,7 @@ if(_mouse_direcao >= 90 && _mouse_direcao <= 270){
 
 
 //colidindo com o cururu
-if(place_meeting(x,y, obj_cururu) && invencivel == false){
+if((place_meeting(x,y, obj_cururu) || place_meeting(x,y, obj_besouro) || place_meeting(x,y, obj_bola)) && invencivel == false){
 	vida -= 1;
 	invencivel = true;
 	alarm[0] = 120;

@@ -25,9 +25,9 @@ if(_direcao_player >= 90 && _direcao_player <= 270){
 }
 
 if(direction >= 90 && direction <= 270){
-		image_xscale = -2;
+		image_xscale = -1;
 	}else {
-		image_xscale = 2;
+		image_xscale = 1;
 	}
 
 //controlando os estados do besouro
@@ -48,7 +48,7 @@ switch(estado){
 	
 	case "atirando": 
 		velocidade = 0;
-		if(carregando == false && recarga >= 60){
+		if(carregando == false && recarga >= 180){
 			carregando = true
 			alarm[1] = 1;
 			recarga = 0
