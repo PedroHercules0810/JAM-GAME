@@ -1,12 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-recarga = 0; 
+image_xscale = .5;
+image_yscale = .5;
 
-velocidade = 1.5
 
-estado = "";
 
-carregando = false;
+alarm[0] = 1
 
-vida = 5;
+carregado = false;

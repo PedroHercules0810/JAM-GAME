@@ -4,7 +4,7 @@
 image_yscale = 2;
 image_xscale = 2;
 
-vida = 5;
+vida = 10;
 
 velocidade = 1.5
 velocidade_cacada = 3;

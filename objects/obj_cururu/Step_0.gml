@@ -9,6 +9,8 @@ speed = 0;
 x = clamp(x,0+sprite_width/2,room_width-sprite_width/2)
 y = clamp(y, 0+sprite_height/2, room_height-sprite_height/2)
 
+
+
 if(_distancia_player <= 600){
 	direction = _direcao_player
 	speed = velocidade_cacada
@@ -20,7 +22,17 @@ if(_distancia_player <= 600){
 
 }
 
-image_angle = direction;
+if(_direcao_player >= 90 && _direcao_player <= 270){
+	image_xscale = -2;
+}else {
+	image_xscale = 2;
+}
+
+if(direction >= 90 && direction <= 270){
+		image_xscale = -2;
+	}else {
+		image_xscale = 2;
+	}
 
 if(place_meeting(x,y, obj_bala)){
 	vida -= obj_bala.dano	
