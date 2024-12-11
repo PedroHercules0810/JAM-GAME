@@ -6,3 +6,4 @@ var _yy = y + lengthdir_y(15, direction) - 15
 instance_create_layer(_xx, _yy,layer,obj_bola);
 
 carregando = false;
+image_speed = 10;

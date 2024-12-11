@@ -48,6 +48,7 @@ switch(estado){
 	
 	case "atirando": 
 		velocidade = 0;
+		image_speed = 0;
 		if(carregando == false && recarga >= 180){
 			carregando = true
 			alarm[1] = 1;

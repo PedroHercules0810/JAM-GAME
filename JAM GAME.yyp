@@ -34,6 +34,7 @@
   },
   "name":"JAM GAME",
   "resources":[
+    {"id":{"name":"fn_pontos","path":"fonts/fn_pontos/fn_pontos.yy",},},
     {"id":{"name":"obj_arma","path":"objects/obj_arma/obj_arma.yy",},},
     {"id":{"name":"obj_bala","path":"objects/obj_bala/obj_bala.yy",},},
     {"id":{"name":"obj_besouro","path":"objects/obj_besouro/obj_besouro.yy",},},

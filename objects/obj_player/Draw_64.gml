@@ -21,4 +21,3 @@ if (image_index >= sprite_get_number(spr_coracao)) {
     image_index = 0;
 }
 
-draw_text(sprite_width, sprite_height -10, espera)

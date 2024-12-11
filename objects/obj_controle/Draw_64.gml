@@ -1,4 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-instance_create_layer(x,y,layer, obj_esplosao)
-global.pontos += 5;
+
+draw_set_font(fn_pontos)
+draw_text(50,100,"Pontuação: " + string(global.pontos))
