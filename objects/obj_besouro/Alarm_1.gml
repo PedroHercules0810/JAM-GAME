@@ -3,6 +3,7 @@
 var _xx = x + lengthdir_x(20, direction)
 var _yy = y + lengthdir_y(15, direction) - 15
 
+
 instance_create_layer(_xx, _yy,layer,obj_bola);
 
 carregando = false;

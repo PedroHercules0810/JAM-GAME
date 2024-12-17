@@ -5,6 +5,8 @@ recarga = 0;
 
 velocidade = 1.5
 
+morreu = 0;
+
 estado = "";
 
 carregando = false;

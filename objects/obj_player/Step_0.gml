@@ -5,6 +5,19 @@ var _left = max(keyboard_check(ord("A")), keyboard_check(vk_left))
 var _right = max(keyboard_check(ord("D")), keyboard_check(vk_right))
 var _mouse_click = mouse_check_button(mb_left)
 
+//contando o tempo
+tempo += 1;
+
+//criando as armas
+if(!instance_exists(obj_arma)){
+	instance_create_layer(x,y, layer, obj_arma)
+}
+
+if(global.arma == "pistola"){
+	obj_arma.image_index = 1;
+} else if(global.arma == "escopeta"){
+	obj_arma.image_index = 0;
+}
 
 //movimentação
 vel_h = (_right - _left) * velocidade
@@ -39,7 +52,16 @@ cooldown ++;
 if(_mouse_click && cooldown >= espera){
 	var _xx = x + lengthdir_x(64, direction);
 	var _yy = y + lengthdir_y(64, direction);
-	instance_create_layer(_xx, _yy, layer , obj_bala);
+	if(global.tiro == "unico"){
+		instance_create_layer(_xx, _yy, layer , obj_bala);
+	} else if (global.tiro == "espalha"){
+		var _tiro1 = instance_create_layer(_xx, _yy, layer, obj_bala);
+		_tiro1.direction += 15;
+		var _tiro2 = instance_create_layer(_xx, _yy, layer, obj_bala);
+		_tiro2.direction += 0;
+		var _tiro3 = instance_create_layer(_xx, _yy, layer, obj_bala);
+		_tiro3.direction -= 15;
+	}
 	cooldown = 0;
 }
 

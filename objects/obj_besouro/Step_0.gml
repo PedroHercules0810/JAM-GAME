@@ -31,22 +31,17 @@ if(direction >= 90 && direction <= 270){
 	}
 
 //controlando os estados do besouro
-switch(estado){
-	case "cacando":
-
+	if(estado == "cacando" && !carregando){
 		direction = point_direction(x,y,Obj_player.x, Obj_player.y);
 		velocidade = 3;
-
-	break;
+	}
 	
-	case "andando":
-
+	if(estado == "andando" && !carregando){
 		alarm[0] = 120;
-		velocidade = 1.5
-
-	break;
+		velocidade = 1.5	
+}
 	
-	case "atirando": 
+	if(estado == "atirando"){ 
 		velocidade = 0;
 		image_speed = 0;
 		if(carregando == false && recarga >= 180){
@@ -54,8 +49,8 @@ switch(estado){
 			alarm[1] = 1;
 			recarga = 0
 		}
-	break;	
-}
+	}
+
 
 
 //tomando tiro

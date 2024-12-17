@@ -21,3 +21,5 @@ if (image_index >= sprite_get_number(spr_coracao)) {
     image_index = 0;
 }
 
+
+
