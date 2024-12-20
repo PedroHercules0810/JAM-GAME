@@ -5,6 +5,20 @@ var _left = max(keyboard_check(ord("A")), keyboard_check(vk_left))
 var _right = max(keyboard_check(ord("D")), keyboard_check(vk_right))
 var _mouse_click = mouse_check_button(mb_left)
 
+//deixando parado
+
+
+
+//fazendo animação de andar
+
+if(_up || _down || _left || _right){
+	image_speed = 2;
+}
+else {
+	image_speed = 0;
+	image_index = 3;
+}
+
 //contando o tempo
 tempo += 1;
 
@@ -75,10 +89,10 @@ obj_arma.y = _yy;
 //fazendo o player flipar qnd a arma estiver atras
 
 if(_mouse_direcao >= 90 && _mouse_direcao <= 270){
-	image_xscale = -1
+	image_xscale = -5
 	obj_arma.image_yscale = -2
 } else {
-	image_xscale = 1
+	image_xscale = 5
 	obj_arma.image_yscale = 2
 }
 
