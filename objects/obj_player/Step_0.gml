@@ -5,12 +5,7 @@ var _left = max(keyboard_check(ord("A")), keyboard_check(vk_left))
 var _right = max(keyboard_check(ord("D")), keyboard_check(vk_right))
 var _mouse_click = mouse_check_button(mb_left)
 
-//deixando parado
-
-
-
 //fazendo animação de andar
-
 if(_up || _down || _left || _right){
 	image_speed = 2;
 }
