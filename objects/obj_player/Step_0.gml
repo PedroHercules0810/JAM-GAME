@@ -84,10 +84,10 @@ obj_arma.y = _yy;
 //fazendo o player flipar qnd a arma estiver atras
 
 if(_mouse_direcao >= 90 && _mouse_direcao <= 270){
-	image_xscale = -5
+	image_xscale = -3
 	obj_arma.image_yscale = -2
 } else {
-	image_xscale = 5
+	image_xscale = 3
 	obj_arma.image_yscale = 2
 }
 
