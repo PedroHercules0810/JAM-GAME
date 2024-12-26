@@ -3,3 +3,5 @@
 
 global.pontos = 0;
 tempo = 0;
+
+paredes = false

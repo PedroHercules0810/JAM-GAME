@@ -2,7 +2,10 @@
 // You can write your code in this editor
 
 var _direcao_player = point_direction(x,y,Obj_player.x, Obj_player.y);
+var _direcao_parede = point_direction(x,y, obj_parede.x, Obj_player.y)
+
 var _distancia_player = point_distance(x,y,Obj_player.x, Obj_player.y);
+var _distancia_parede = point_distance(x,y,obj_parede.x, obj_parede.y);
 
 speed = 0;
 
@@ -11,7 +14,7 @@ y = clamp(y, 0+sprite_height/2, room_height-sprite_height/2)
 
 
 
-if(_distancia_player <= 600){
+if(_distancia_player <= 600 && (_direcao_player != _direcao_parede)){
 	direction = _direcao_player
 	speed = velocidade_cacada
 	estado = "cacada"
