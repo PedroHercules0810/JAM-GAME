@@ -61,6 +61,7 @@ cooldown ++;
 if(_mouse_click && cooldown >= espera){
 	var _xx = x + lengthdir_x(64, direction);
 	var _yy = y + lengthdir_y(64, direction);
+	audio_play_sound(Sound4,3,0,0.2);
 	if(global.tiro == "unico"){
 		instance_create_layer(_xx, _yy, layer , obj_bala);
 	} else if (global.tiro == "espalha"){
@@ -97,6 +98,7 @@ if((place_meeting(x,y, obj_cururu) || place_meeting(x,y, obj_besouro) || place_m
 	vida -= 1;
 	invencivel = true;
 	alarm[0] = 120;
+	audio_play_sound(snd_tiro,10,0,0.5);
 }
 
 //morrendo

@@ -30,7 +30,6 @@
     {"name":"snd_tiro","order":2,"path":"sounds/snd_tiro/snd_tiro.yy",},
     {"name":"Sound4","order":3,"path":"sounds/Sound4/Sound4.yy",},
     {"name":"Sound5","order":4,"path":"sounds/Sound5/Sound5.yy",},
-    {"name":"Sound6","order":5,"path":"sounds/Sound6/Sound6.yy",},
     {"name":"spr_arma","order":3,"path":"sprites/spr_arma/spr_arma.yy",},
     {"name":"spr_background","order":6,"path":"sprites/spr_background/spr_background.yy",},
     {"name":"spr_bala","order":2,"path":"sprites/spr_bala/spr_bala.yy",},
