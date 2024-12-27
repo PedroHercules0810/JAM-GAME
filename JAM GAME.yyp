@@ -30,7 +30,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"JAM GAME",
   "resources":[
@@ -52,7 +52,6 @@
     {"id":{"name":"snd_tiro","path":"sounds/snd_tiro/snd_tiro.yy",},},
     {"id":{"name":"Sound4","path":"sounds/Sound4/Sound4.yy",},},
     {"id":{"name":"Sound5","path":"sounds/Sound5/Sound5.yy",},},
-    {"id":{"name":"Sound6","path":"sounds/Sound6/Sound6.yy",},},
     {"id":{"name":"spr_arma","path":"sprites/spr_arma/spr_arma.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
     {"id":{"name":"spr_bala","path":"sprites/spr_bala/spr_bala.yy",},},
