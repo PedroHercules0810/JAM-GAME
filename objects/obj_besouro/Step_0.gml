@@ -1,27 +1,68 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-speed = velocidade;
 recarga += 1;
 
-var _distance_player = point_distance(x,y,Obj_player.x, Obj_player.y);
-var _direcao_player = point_direction(x,y, Obj_player.x, Obj_player.y)
+var _direcao_player = point_direction(x,y,Obj_player.x, Obj_player.y);
+var _distancia_player = point_distance(x,y,Obj_player.x, Obj_player.y);
 
-//verificando as distancias do player
-if(_distance_player <= 700){
-	estado = "cacando"
+x = clamp(x,0+sprite_width/2,room_width-sprite_width/2)
+y = clamp(y, 0+sprite_height/2, room_height-sprite_height/2)
+
+
+
+if place_meeting(x+vel_h,y,obj_parede) {
+    while !place_meeting(x+sign(vel_h),y,obj_parede) {
+        x += sign(vel_h);
+	}
+	vel_h = 0;
+}
+x += vel_h;
+
+if place_meeting(x,y+vel_v,obj_parede) {
+    while !place_meeting(x,y+sign(vel_v),obj_parede) {
+        y += sign(vel_v);
+    }
+    vel_v = 0;
+}
+y += vel_v;
+
+if (_distancia_player <= 700 && !carregando) {
+   
+        estado = "cacando";
+    }
+	else {
+        estado = "alerta";
+    }
+	if(_distancia_player <= 450 && !carregando){
+		estado = "atirando"
+		
+	}else if (_distancia_player <= 700 && !carregando){
+        estado = "cacando";
+    }else {
+        estado = "alerta";
+    }
+	
+
+
+// Ajusta a escala da imagem
+if (_direcao_player >= 90 && _direcao_player <= 270) {
+    image_xscale = -1;
 } else {
-	estado = "andando"
-}
-if(_distance_player <= 450){
-	estado = "atirando"
+    image_xscale = 1;
 }
 
-//flipando quando olhar pra tras
+if (direction >= 90 && direction <= 270) {
+    image_xscale = -1;
+} else {
+    image_xscale = 1;
+}
+
+
 if(_direcao_player >= 90 && _direcao_player <= 270){
-	image_xscale = -2;
+	image_xscale = -1;
 }else {
-	image_xscale = 2;
+	image_xscale = 1;
 }
 
 if(direction >= 90 && direction <= 270){
@@ -29,29 +70,29 @@ if(direction >= 90 && direction <= 270){
 	}else {
 		image_xscale = 1;
 	}
-
-//controlando os estados do besouro
-	if(estado == "cacando" && !carregando){
-		direction = point_direction(x,y,Obj_player.x, Obj_player.y);
-		velocidade = 3;
-	}
 	
-	if(estado == "andando" && !carregando){
-		alarm[0] = 120;
-		velocidade = 1.5	
-}
-	
-	if(estado == "atirando"){ 
-		velocidade = 0;
+	switch(estado){
+		case "cacando":
+			direction = _direcao_player;
+			vel_h = velocidade * dcos(direction); // Movimento horizontal
+			vel_v = velocidade * -dsin(direction); // Movimento vertical
+		break;
+		case "alerta":
+			vel_v = velocidade * direcao_aleatoriax;
+			vel_h = velocidade * direcao_aleatoriay;
+		break;
+		case "atirando":
+			velocidade = 0;
 		image_speed = 0;
-		if(carregando == false && recarga >= 180){
+		if(!carregando && recarga >= 180){
 			carregando = true
 			alarm[1] = 1;
 			recarga = 0
 		}
+		break;
 	}
 
-
+alarm[0] = 220;
 
 //tomando tiro
 if(place_meeting(x,y,obj_bala)){

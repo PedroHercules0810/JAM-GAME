@@ -6,6 +6,9 @@ image_xscale = 2;
 
 vida = 10;
 
+vel_v = 0;
+vel_h = 0;
+
 velocidade = 1.5
 velocidade_cacada = 3;
 

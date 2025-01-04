@@ -1,4 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-direction = irandom(360)
+
+if(estado == "alerta"){
+direcao_aleatoriax = choose(-1,1)
+direcao_aleatoriay = choose(-1,1)
+}
