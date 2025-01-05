@@ -81,7 +81,6 @@ if(direction >= 90 && direction <= 270){
 		case "atirando":
 			vel_h = 0;
 			vel_v = 0
-
 			image_speed = 0;
 		if(!carregando && recarga >= 180){
 			carregando = true

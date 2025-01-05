@@ -18,3 +18,6 @@ alarm[0] = 10
 
 
 image_blend = choose(c_red, c_white, c_blue, c_yellow)
+
+//evitando nascer dentro da parede
+if(place_meeting(x,y, obj_parede)) instance_destroy(id,false)

@@ -52,10 +52,6 @@ if (direction >= 90 && direction <= 270) {
 }
 
 
-
-
-
-
 if(_direcao_player >= 90 && _direcao_player <= 270){
 	image_xscale = -2;
 }else {
@@ -71,6 +67,7 @@ if(direction >= 90 && direction <= 270){
 if(place_meeting(x,y, obj_bala)){
 	vida -= obj_bala.dano	
 }
+
 
 
 

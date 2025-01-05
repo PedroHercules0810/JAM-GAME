@@ -18,3 +18,5 @@ estado = "";
 carregando = false;
 
 vida = 5;
+
+if(place_meeting(x,y, obj_parede)) instance_destroy(id,false)
