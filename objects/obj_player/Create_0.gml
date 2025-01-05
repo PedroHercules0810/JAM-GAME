@@ -17,3 +17,5 @@ tempo = 0;
 global.tiro = "unico"
 
 global.arma = "pistola"
+
+global.morto = false;

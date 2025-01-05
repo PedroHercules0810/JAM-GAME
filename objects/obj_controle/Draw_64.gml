@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(room = rm_main){
 draw_set_font(fn_pontos)
 draw_text(50,100,"Pontuação: " + string(global.pontos))
 
@@ -38,5 +39,12 @@ for (var _i = 0; _i < string_length(_texto); _i++) {
 draw_set_colour(c_white);
 
 }
+}
 
-//draw_set_color(c_white)
+if(room == rm_pontos){
+	draw_set_font(fn_pontos)
+	draw_set_halign(fa_center);
+	draw_text(room_width/2, room_height/2, "Máximo de pontos: " + string(max_pontos))
+	
+	draw_set_halign(fa_left);
+}

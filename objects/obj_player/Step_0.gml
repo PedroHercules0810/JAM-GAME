@@ -103,5 +103,5 @@ if((place_meeting(x,y, obj_cururu) || place_meeting(x,y, obj_besouro) || place_m
 
 //morrendo
 if(vida <= 0) {
-	game_restart();
+	global.morto = true;
 }
