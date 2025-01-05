@@ -27,21 +27,18 @@ if place_meeting(x,y+vel_v,obj_parede) {
 }
 y += vel_v;
 
-if (_distancia_player <= 700 && !carregando) {
-   
-        estado = "cacando";
-    }
-	else {
-        estado = "alerta";
-    }
-	if(_distancia_player <= 450 && !carregando){
-		estado = "atirando"
-		
-	}else if (_distancia_player <= 700 && !carregando){
-        estado = "cacando";
-    }else {
-        estado = "alerta";
-    }
+
+
+show_debug_message(estado)
+
+if ( _distancia_player <= 450 ) {
+    estado = "atirando";
+} else if ( _distancia_player <= 700) {
+    estado = "cacando";
+} else  {
+    estado = "alerta";
+}
+
 	
 
 
@@ -82,12 +79,13 @@ if(direction >= 90 && direction <= 270){
 			vel_h = velocidade * direcao_aleatoriay;
 		break;
 		case "atirando":
-			velocidade = 0;
-		image_speed = 0;
+			vel_h = 0;
+			vel_v = 0
+
+			image_speed = 0;
 		if(!carregando && recarga >= 180){
 			carregando = true
 			alarm[1] = 1;
-			recarga = 0
 		}
 		break;
 	}

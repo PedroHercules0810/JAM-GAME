@@ -3,6 +3,5 @@
 timer += 1;
 if(!instance_exists(obj_powerup_arma) && timer >= 360 && global.arma != "escopeta"){
 	instance_create_layer(irandom_range(0, room_width),irandom_range(0, room_height), layer, obj_powerup_arma);
-	show_message("Tem arma nova por aí")
 	timer = 0;
 }
