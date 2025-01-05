@@ -38,6 +38,7 @@
     {"name":"spr_cactu","order":8,"path":"sprites/spr_cactu/spr_cactu.yy",},
     {"name":"spr_coracao","order":1,"path":"sprites/spr_coracao/spr_coracao.yy",},
     {"name":"spr_cururu","order":4,"path":"sprites/spr_cururu/spr_cururu.yy",},
+    {"name":"spr_cuscuz","order":10,"path":"sprites/spr_cuscuz/spr_cuscuz.yy",},
     {"name":"spr_explosion","order":5,"path":"sprites/spr_explosion/spr_explosion.yy",},
     {"name":"spr_parede","order":7,"path":"sprites/spr_parede/spr_parede.yy",},
   ],
