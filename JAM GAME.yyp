@@ -30,7 +30,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"JAM GAME",
   "resources":[
@@ -40,8 +40,10 @@
     {"id":{"name":"obj_besouro","path":"objects/obj_besouro/obj_besouro.yy",},},
     {"id":{"name":"obj_bola","path":"objects/obj_bola/obj_bola.yy",},},
     {"id":{"name":"obj_botao","path":"objects/obj_botao/obj_botao.yy",},},
+    {"id":{"name":"obj_cactu","path":"objects/obj_cactu/obj_cactu.yy",},},
     {"id":{"name":"obj_controle","path":"objects/obj_controle/obj_controle.yy",},},
     {"id":{"name":"obj_cururu","path":"objects/obj_cururu/obj_cururu.yy",},},
+    {"id":{"name":"obj_cuscuz","path":"objects/obj_cuscuz/obj_cuscuz.yy",},},
     {"id":{"name":"obj_esplosao","path":"objects/obj_esplosao/obj_esplosao.yy",},},
     {"id":{"name":"obj_parede","path":"objects/obj_parede/obj_parede.yy",},},
     {"id":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},},

@@ -18,7 +18,7 @@ var _velocidade = 0.001;    // Velocidade da oscilação
 var _espacamento = 16;    // Espaçamento entre letras
 
 // Texto a ser desenhado
-var _texto = "SINTO CHEIRO DE ARMA NOVA";
+var _texto = "TEM UMA BATEBUXA BOA POR AÍ";
 
 // Desenhar cada letra com movimento independente e cor arco-íris
 for (var _i = 0; _i < string_length(_texto); _i++) {
