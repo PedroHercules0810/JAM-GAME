@@ -11,7 +11,7 @@ if(_up || _down || _left || _right){
 }
 else {
 	image_speed = 0;
-	image_index = 3;
+	image_index = 1;
 }
 
 //contando o tempo
