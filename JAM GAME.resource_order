@@ -47,5 +47,6 @@
     {"name":"spr_cuscuz","order":10,"path":"sprites/spr_cuscuz/spr_cuscuz.yy",},
     {"name":"spr_explosion","order":5,"path":"sprites/spr_explosion/spr_explosion.yy",},
     {"name":"spr_parede","order":7,"path":"sprites/spr_parede/spr_parede.yy",},
+    {"name":"spr_titulo","order":11,"path":"sprites/spr_titulo/spr_titulo.yy",},
   ],
 }
